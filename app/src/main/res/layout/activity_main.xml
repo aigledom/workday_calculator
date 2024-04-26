@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_marginTop="30dp">
+
+    <!--Bloque lunes-->
+    <LinearLayout
+        android:id="@+id/llLunes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/tvLunes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lunes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/rounded_rectangle"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/etLunesHoras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Horas"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/etLunesMinutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Minutos"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <!-- Bloque martes-->
+    <LinearLayout
+        android:id="@+id/llMartes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/llLunes"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/tvMartes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Martes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/rounded_rectangle"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/etMartesHoras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Horas"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/etMartesMinutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Minutos"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <!-- Bloque miércoles-->
+    <LinearLayout
+        android:id="@+id/llMiercoles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/llMartes"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/tvMiercoles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miércoles"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/rounded_rectangle"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/etMiercolesHoras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Horas"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/etMiercolesMinutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Minutos"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <!-- Bloque jueves-->
+    <LinearLayout
+        android:id="@+id/llJueves"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/llMiercoles"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/tvJueves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jueves"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/rounded_rectangle"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/etJuevesHoras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Horas"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/etJuevesMinutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Minutos"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <!-- Bloque viernes-->
+    <LinearLayout
+        android:id="@+id/llViernes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/llJueves"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/tvViernes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viernes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/rounded_rectangle"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/etViernesHoras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Horas"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/etViernesMinutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Minutos"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_below="@id/llViernes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/tvHorasTotales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horas totales: "
+        android:layout_below="@id/btnCalcular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/tvHorasRestantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horas restantes: "
+        android:layout_below="@id/tvHorasTotales"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
